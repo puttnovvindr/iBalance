@@ -1,8 +1,8 @@
 Ibalance
 
 Tim:
-Puput Novita Indraini
-Andrea Octaviani
+Puput Novita Indraini, 
+Andrea Octaviani, 
 Sessario Ammar Wibowo
 
 Penjelasan:
