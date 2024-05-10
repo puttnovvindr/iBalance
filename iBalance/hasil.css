@@ -1,0 +1,221 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* header, navbar */
+.header{
+    width: auto;
+    height: auto;
+    background: linear-gradient(to bottom, #ee739e, #632E40);
+    padding: 40px 100px 80px 100px;
+}
+
+.header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.header .navbar .logo{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 22px;
+}
+
+.header .navbar .menu{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.header .navbar .menu a{
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+
+.header .navbar .menu a:not(button a)::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    transform-origin: right;
+    transform: scaleX(0);
+}
+
+.header .navbar .menu a:not(button a):hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.header .navbar button{
+    padding: 10px 30px;
+    border-radius: 6px;
+    border: 0px solid;
+    font-weight: bold;
+    background-color: #763249;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.header .navbar .menu button:hover {
+    background-color: #632E40;
+    box-shadow: 0px 0px 50px rgba(238, 115, 158, 0.5);
+}
+
+/* header, judul */
+.header .judul{
+    padding: 60px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header .judul h1{
+    font-size: 80px;
+    color: #fff;
+}
+
+.header .judul p{
+    font-size: 18px;
+    color: #fff;
+}
+
+/* hasil */
+.hasil{
+    padding: 80px 80px 80px 80px;
+}
+
+.hasil img{
+    width: 900px;
+}
+
+.hasil p{
+    font-size: 20px;
+    width: 1000px;
+}
+
+.hasil h1{
+    margin-top: 20px;
+}
+
+/* rekomendasi */
+
+.rekomendasi{
+    padding: 30px 80px 30px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+.rekomendasi .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rekomendasi .container .box{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.rekomendasi .container #img{
+    width: 60px;
+    padding: 20px 20px;
+    border-radius: 6px;
+    border: 0.1px solid #632E40;
+}
+
+.rekomendasi .container .box .text{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.rekomendasi .container .box .information-1{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.rekomendasi .container .box .information-2{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.rekomendasi .container .box-2{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.rekomendasi .container .box-2 .option img{
+    width: 26px;
+}
+
+.rekomendasi .container .box-2 .option{
+    display: flex;
+    justify-content: end;
+    gap: 8px;
+}
+
+/* footer */
+.footer{
+    margin-top: 100px;
+    background: linear-gradient(to bottom, #ee739e, #632E40); background-color: #ee739e;
+    padding: 80px 100px 80px 100px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo, .footer-layanan, .footer-kontak, .footer-tautan{
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-logo .images{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-kontak .box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo img{
+    width: 50px;
+}
+
+.footer-tautan{
+    width: auto;
+}
+
+.footer-tautan a{
+    text-decoration: none;
+    color: #fff;
+}
